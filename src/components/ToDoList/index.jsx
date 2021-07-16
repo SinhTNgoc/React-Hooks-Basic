@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 
+//Check PropTypes
 TodoList.propTypes = {
     todos: PropTypes.array,
     onTodoClick: PropTypes.func,
     
 };
-// Nếu ko truyền prop xuống thì lấy giá trị mặc định
+// Nếu chưa truyền prop xuống thì lấy giá trị mặc định
 TodoList.defaultProps = {
     todos: [],
     onTodoClick: null,
